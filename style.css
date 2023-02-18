@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+#result-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom,hsl(252, 100%, 67%) -30%, hsl(241, 81%, 54%)100%);
+    border-radius: 0 0 2em 2em;
+    padding: 1.5em 3em;
+    text-align: center;
+}
+#result-section h1{
+    font-size: 1.25em;
+    color: hsl(241, 100%, 89%);
+}
+#result-section .circle{
+    margin: 1.5em 0;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, hsla(256, 80%, 45%, .8), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#result-section .circle span{
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+}
+#result-section .circle p{
+    color: hsla(241, 100%, 89%,.4);
+}
+#result-section strong{
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: .25em;
+}
+#result-section p{
+    color: hsla(241, 100%, 89%, .75);
+    margin-bottom: .5em;
+}
+#summary-section{
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+#summary-section h2{
+    text-align: left;
+    font-size: 1.2em;
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 1.5em;
+}
+#summary-section .sum{
+    display: flex;
+    align-items: center;
+    padding: 1em .75em;
+    background-color: antiquewhite;
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
+#summary-section .sum:nth-child(1){
+    background-color: hsla(0, 100%, 67%,.1);
+}
+#summary-section .sum:nth-child(2){
+    background-color: hsla(39, 100%, 56%,.1);
+}
+#summary-section .sum:nth-child(3){
+    background-color: hsla(166, 100%, 37%,.1);
+}
+#summary-section .sum:nth-child(4){
+    background-color: hsla(234, 85%, 45%,.1);
+}
+#summary-section .sum img{
+    margin-right: .5em;
+}
+#summary-section .sum h3{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+#summary-section .sum .score{
+    margin-left: auto;
+    margin-right: .5em;
+    color: hsla(224, 30%, 27%,.5);
+    font-weight: 800;
+}
+#summary-section .sum .score span{
+    color: hsl(224, 30%, 27%)
+}
+#summary-section .sum:nth-child(1) h3{
+    color: hsl(0, 100%, 67%);
+}
+#summary-section .sum:nth-child(2) h3{
+    color: hsl(39, 100%, 56%);
+}
+#summary-section .sum:nth-child(3) h3{
+    color: hsl(166, 100%, 37%);
+}
+#summary-section .sum:nth-child(4) h3{
+    color: hsl(234, 85%, 45%);
+}
+#summary-section button{
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-size: 1em;
+    border: 0;
+    border-radius: 2em;
+    padding: 1em;
+    font-weight: 700;
+    letter-spacing: .03em;
+}
+
+@media (min-width: 768px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .wrapper {
+        height: 55vh;
+        width: 45vw;
+        flex-direction: row;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 5px 10px 40px rgba(0,0,0,.3);
+        border-radius: 2em;
+    }
+    #result-section {
+        height: 100%;
+        border-radius: 2em;
+    }
+    #result-section h1 {
+        font-size: 1.35em;
+    }
+    #result-section .circle {
+        margin: 2em;
+        width: 10em;
+        height: 10em;
+    }
+    #result-section .circle span {
+        font-size: 4em;
+    }
+    #result-section .circle p {
+        color: hsla(241, 100%, 89%, .5);
+    }
+    #result-section p{
+        margin-top: .5em;
+    }
+    #summary-section h2 {
+        margin-bottom: .75em;
+    }
+    #summary-section .sum {
+        padding: .75em;
+        margin-bottom: .75em;
+    }
+    #summary-section .sum h3 {
+        font-size: 1em;
+    }
+    #summary-section button {
+        margin-top: 1.5em;
+    } 
+    #summary-section button:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to bottom, hsl(252, 100%, 67%) -30%, hsl(241, 81%, 54%)100%);
+    }
+}
